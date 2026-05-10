@@ -21,4 +21,14 @@ https://sourceforge.net/projects/custom-freeradius/
 
 1. SSH into your Ubuntu 24.04 LTS x86_64 server.
 2. Download the `freeradius-custom-4.0` package from the SourceForge link above.
-3. Continue the installation on the target server using the downloaded package.
+3. Install the downloaded package:
+
+   ```bash
+   sudo dpkg -i ./freeradius-custom-4.0*.deb
+   ```
+
+4. If `dpkg` reports missing dependencies, run:
+
+   ```bash
+   sudo apt-get install -f
+   ```
