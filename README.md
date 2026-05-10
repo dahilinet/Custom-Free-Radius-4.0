@@ -20,8 +20,14 @@ https://sourceforge.net/projects/custom-freeradius/
 ## Installation
 
 1. SSH into your Ubuntu 24.04 LTS x86_64 server.
-2. Download the `freeradius-custom-4.0` package from the SourceForge link above.
-3. Verify the downloaded file against any checksum or signature published on the download page before installing it.
+2. Download the `freeradius-custom-4.0` package from https://sourceforge.net/projects/custom-freeradius/
+3. If the download page provides a SHA256 checksum, verify the package before installing it:
+
+   ```bash
+   sha256sum ./freeradius-custom-4.0*.deb
+   ```
+
+   Compare the output with the checksum published on the download page.
 4. Install the downloaded package:
 
    ```bash
